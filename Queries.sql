@@ -20,7 +20,7 @@ FROM dbo.Teachers;
 GO
 
 PRINT 'Result 1-5';
-SELECT CONCAT('The dean of faculty ', Name, ' is ', Dean, '.') AS [Faculty Info]
+SELECT CONCAT('Dean of faculty ', Name, ' is ', Dean, '.') AS [Faculty Info]
 FROM dbo.Faculties;
 GO
 
@@ -39,7 +39,7 @@ GO
 PRINT 'Result 1-8';
 SELECT Name
 FROM dbo.Faculties
-WHERE Name <> N'Star Platinum Academy';
+WHERE Name <> N'Star platinum academy';
 GO
 
 PRINT 'Result 1-9';
@@ -69,7 +69,7 @@ GO
 PRINT 'Result 1-13';
 SELECT Name AS [Name of Department]
 FROM dbo.Departments
-WHERE Name < N'The World Studies'
+WHERE Name < N'The world studies'
 ORDER BY Name;
 GO
 
